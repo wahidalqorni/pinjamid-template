@@ -1,0 +1,218 @@
+@media (max-width: 992px) {
+    /* scrollbar */
+    .element,
+    html {
+        scrollbar-width: none
+    }
+    html::-webkit-scrollbar,
+    .element::-webkit-scrollbar {
+        display: none
+    }
+    /* sett body */
+    body {
+        margin-bottom: 300px;
+    }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    button {
+        margin: 0;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    /* bottom bar */
+    .tab-container {
+        background: white;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        box-shadow: 0 5px 10px rgb(207, 131, 131);
+        padding: 10px;
+        width: 100%;
+        height: auto;
+    }
+    /* style bg menu */
+    .tab-container a {
+        text-decoration: none;
+        color: rgb(58, 50, 36);
+    }
+    .tab {
+        background: white;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15px;
+        margin: 0 10px;
+        transition: background 0.1s linear;
+    }
+    /* text hiden */
+    .tab p {
+        font-weight: bold;
+        overflow: hidden;
+        max-width: 0;
+    }
+    /* text aktiv */
+    .tab.active p {
+        font-size: 10px;
+        margin: auto 5px;
+        max-width: 200px;
+        transition: max-width 0.4s linear;
+        color: white;
+    }
+    /* background menu */
+    .tab.active.purple {
+        background: rgba(16, 149, 190, 0.76);
+        color: white;
+    }
+    .tab.active.pink {
+        background: rgba(16, 149, 190, 0.76);
+        color: white;
+    }
+    .tab.active.yellow {
+        background: rgba(16, 149, 190, 0.76);
+        color: white;
+    }
+    .tab.active.teal {
+        background: rgba(16, 149, 190, 0.76);
+        color: white;
+    }
+    /* bg navbar top */
+    #head-top .top-container {
+        background: white;
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    /* playground */
+    #playground {
+        margin-top: 90px;
+        font-family: 'roboto';
+    }
+    #playground .head p {
+        font-weight: lighter;
+        line-height: 22px;
+        font-size: 23px;
+        color: #000;
+    }
+    #playground span {
+        color: #42AEDC;
+        font-weight: 400;
+        font-size: 17px;
+    }
+    /* banner */
+    /* category */
+    #playground .head-title p {
+        color: #000;
+        font-weight: bold;
+        font-size: 17px;
+        margin-top: -0.8rem;
+    }
+    /* search box */
+    #playground .search-box {
+        margin-top: -1rem;
+    }
+    #playground input[type=text] {
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        font-size: 16px;
+        background-image: url('../Assets/ic_search.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    #playground input::placeholder {
+        color: #42AEDC;
+    }
+    #playground input[placeholder] {
+        font-family: 'roboto';
+        color: #42AEDC;
+        font-size: 12px;
+    }
+    #playground .bg-cat {
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+    }
+    #playground p {
+        font-size: 12px;
+        color: #42AEDC;
+        font-family: 'Rachana';
+        margin-top: 10px;
+    }
+    /* rekomendasi */
+    #playground .rekomendasi .left p {
+        color: #000;
+        font-weight: bo ld;
+        font-size: 17px;
+        margin-top: 10px;
+    }
+    #playground .rekomendasi .right p {
+        font-size: 11px;
+    }
+    #playground .rekomendasi .card {
+        border: none;
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+    }
+    #playground .rekomendasi .desc {
+        padding: 5px;
+    }
+    #playground .rekomendasi .card h6 {
+        font-family: Rachana;
+        font-size: 13px;
+        color: #5a9447;
+    }
+    #playground .rekomendasi .product-rekomendasi .card h1 {
+        font-family: Roboto;
+        font-size: 15px;
+        color: #000000;
+        font-weight: bold;
+    }
+    #playground .rekomendasi .card p {
+        font-family: Raleway;
+        font-style: bold;
+        font-weight: 300;
+        font-size: 12px;
+        color: #000000;
+    }
+    /* rekomendasi slider product */
+    #playground .rekomendasi .product-rekomendasi {
+        width: 100%;
+        height: auto;
+        border: 1px solid #fff;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    #playground .rekomendasi .product-rekomendasi::-webkit-scrollbar {
+        width: 0;
+    }
+    #playground .rekomendasi .product-rekomendasi .card {
+        min-width: 90px;
+        height: auto;
+        background: white;
+        margin-right: 7px;
+        margin-bottom: 50px;
+    }
+}
