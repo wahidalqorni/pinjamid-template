@@ -144,6 +144,7 @@
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         border-radius: 50px;
         font-size: 16px;
+        border: none;
         background-image: url('../Assets/ic_search.png');
         background-position: 10px 10px;
         background-repeat: no-repeat;
@@ -401,28 +402,30 @@
         margin-top: 25px;
     }
     /* HALAMAN LIST PRODUCT */
-    #pilih-barang .list-product {
+    #head-barang .list-product {
         width: 100%;
-        height: auto;
+        height: 9rem;
         background: white;
     }
-    #pilih-barang h1 {
+    #head-barang h1 {
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
     }
-    #pilih-barang .category h2 {
+    #head-barang .category h2 {
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 13px;
+        font-size: 11px;
         color: #71C2E5;
+        text-align: center;
+        background: white;
+        border-radius: 10px;
+        margin: 2px;
+        box-shadow: 0px 1px 10px rgba(85, 77, 77, 0.1);
     }
-    #pilih-barang .search-box {
-        margin-top: -1rem;
-    }
-    #pilih-barang input[type=text] {
+    #head-barang input[type=text] {
         width: 100%;
         box-sizing: border-box;
         border: 2px solid #ccc;
@@ -438,10 +441,10 @@
         -webkit-transition: width 0.4s ease-in-out;
         transition: width 0.4s ease-in-out;
     }
-    #pilih-barang input::placeholder {
+    #head-barang input::placeholder {
         color: #42AEDC;
     }
-    #pilih-barang input[placeholder] {
+    #head-barang input[placeholder] {
         font-family: 'roboto';
         color: #42AEDC;
         font-size: 12px;
@@ -458,20 +461,38 @@
     }
     #body-barang .card p {
         color: #42AEDC;
-        font-size: 10px;
-        line-height: 13px;
+        font-size: 12px;
+        line-height: 15px;
         margin-bottom: 0;
     }
     #body-barang .card .desc h6 {
         font-family: Roboto;
-        font-size: 13px;
+        font-size: 11px;
         color: #42AEDC;
     }
     #body-barang .card {
         border-radius: 10px;
         margin-bottom: 20px;
+        border: none;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background: #FFFFFF;
     }
     #body-barang .card .desc {
         padding: 10px;
+    }
+    #head-barang .category {
+        width: 100%;
+        height: auto;
+        display: flex;
+        overflow-x: auto;
+    }
+    #head-barang .category::-webkit-scrollbar {
+        width: 0;
+    }
+    #head-barang .category .bg-category-barang {
+        min-width: 90px;
+        height: auto;
+        margin-right: 7px;
     }
 }
